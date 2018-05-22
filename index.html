@@ -14,7 +14,7 @@
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="">Personal Portfolio WebPage</a>
+				<a class="navbar-brand" href="#">Personal Portfolio WebPage</a>
 				<button type="button" class="navbar-toggle" data-toggle="collapse"
 					data-target="#myNavbar">
 					<span class="icon-bar"> </span> <span class="icon-bar"> </span> <span
@@ -31,7 +31,6 @@
 	<div>
 		<div id="myCarousel" class="carousel slide" data-ride="carousel"
 			style="width: 100%; padding-top: 51px;">
-			<!-- Indicators -->
 			<ol class="carousel-indicators">
 				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 				<li data-target="#myCarousel" data-slide-to="1"></li>
@@ -41,12 +40,10 @@
 				<li data-target="#myCarousel" data-slide-to="5"></li>
 				<li data-target="#myCarousel" data-slide-to="6"></li>
 			</ol>
-
-			<!-- Wrapper for slides -->
 			<div class="carousel-inner">
 
 				<div class="item active">
-					<img src="images/arsenal.jpg" style="width: 100%; height: 500px">
+					<img src="images/arsenal.jpg" style="width: 100%; height: 700px">
 					<div class="carousel-caption" style="padding-bottom: 18%">
 						<h3>
 							<i>Arsenal </i>
@@ -54,9 +51,8 @@
 					</div>
 				</div>
 
-
 				<div class="item">
-					<img src="images/barca.png" style="width: 100%; height: 500px">
+					<img src="images/barca.jpg" style="width: 100%; height: 700px">
 					<div class="carousel-caption" style="padding-bottom: 18%">
 						<h3>
 							<i>Barcelona </i>
@@ -64,7 +60,7 @@
 					</div>
 				</div>
 				<div class="item">
-					<img src="images/bayern.jpg" style="width: 100%; height: 500px">
+					<img src="images/bayern.jpg" style="width: 100%; height: 700px">
 					<div class="carousel-caption" style="padding-bottom: 18%">
 						<h3>
 							<i>Bayern Munich </i>
@@ -72,7 +68,7 @@
 					</div>
 				</div>
 				<div class="item">
-					<img src="images/chelsea.jpg" style="width: 100%; height: 500px">
+					<img src="images/chelsea.jpg" style="width: 100%; height: 700px">
 					<div class="carousel-caption" style="padding-bottom: 18%">
 						<h3>
 							<i>Chelsea </i>
@@ -80,7 +76,7 @@
 					</div>
 				</div>
 				<div class="item">
-					<img src="images/mc.jpg" style="width: 100%; height: 500px">
+					<img src="images/mc.jpg" style="width: 100%; height: 700px">
 					<div class="carousel-caption" style="padding-bottom: 18%">
 						<h3>
 							<i>Manchester City </i>
@@ -88,7 +84,7 @@
 					</div>
 				</div>
 				<div class="item">
-					<img src="images/mu.png" style="width: 100%; height: 500px">
+					<img src="images/mu.jpg" style="width: 100%; height: 700px">
 					<div class="carousel-caption" style="padding-bottom: 18%">
 						<h3>
 							<i>Manchester United </i>
@@ -96,7 +92,7 @@
 					</div>
 				</div>
 				<div class="item">
-					<img src="images/rmd.jpg" style="width: 100%; height: 500px">
+					<img src="images/rmd.jpg" style="width: 100%; height: 700px">
 					<div class="carousel-caption" style="padding-bottom: 18%">
 						<h3>
 							<i>Real Madrid</i>
@@ -117,71 +113,87 @@
 	</div>
 	<div style="text-align: left; padding-top: 2%; padding-left: 5%;"
 		class="container text-center">
-		<div class="img-thumbnail"
+
+		<div class="img-thumbnail" onmouseover="bigImage(this)"
+			onmouseout="smallImage(this)"
 			style="width: 320px; height: 320px; text-align: center;">
-			<a href="html/Arsenal.html" target="newtab"> <img
-				src="images/arsenal.jpg" style="width: 310px; height: 310px;"
-				id="onimage">
+			<a href="https://www.arsenal.com/" target="newtab"> <img
+				src="images/arsenal.jpg" width=100% height=100% id="onimage"
+				alt="Arsenal">
+			</a>
+			<h3 id="arsenal">Arsenal</h3>
+			<input id= "textInput">
+			<button id="buttonSet" onclick="setTexth3()">Button</button>
+		</div>
+
+		<div class="img-thumbnail" style="width: 320px; height: 320px;"
+			onmouseover="bigImage(this)" onmouseout="smallImage(this)">
+			<a href="https://www.fcbarcelona.com/" target="newtab"> <img
+				src="images/barca.jpg" width=100% height=100% id="onimage"
+				alt="Barcelona">
 			</a>
 		</div>
-		<div class="img-thumbnail" style="width: 320px; height: 320px;">
-			<a href="html/Barcelona.html" target="newtab"> <img
-				src="images/barca.png" style="width: 310px; height: 310px"
-				id="onimage">
+
+		<div class="img-thumbnail" style="width: 320px; height: 320px;"
+			onmouseover="bigImage(this)" onmouseout="smallImage(this)">
+			<a href="https://fcbayern.com/en" target="newtab"> <img
+				src="images/bayern.jpg" width=100% height=100% id="onimage"
+				alt="Bayern Munich">
 			</a>
 		</div>
-		<div class="img-thumbnail" style="width: 320px; height: 320px;">
-			<a href="html/BaryenMunich.html" target="newtab"> <img
-				src="images/bayern.jpg" style="width: 310px; height: 310px;"
-				id="onimage">
+
+		<div class="img-thumbnail" style="width: 320px; height: 320px;"
+			onmouseover="bigImage(this)" onmouseout="smallImage(this)">
+			<a href="https://beta.chelseafc.com/" target="newtab"> <img
+				src="images/chelsea.jpg" width=100%; height=100% id="onimage"
+				alt="Chelsea">
 			</a>
 		</div>
-		<div class="img-thumbnail" style="width: 320px; height: 320px;">
-			<a href="html/Chelsea.html" target="newtab"> <img
-				src="images/chelsea.jpg" style="width: 310px; height: 310px;"
-				id="onimage">
+
+		<div class="img-thumbnail" style="width: 320px; height: 320px;"
+			onmouseover="bigImage(this)" onmouseout="smallImage(this)">
+			<a href="https://www.mancity.com/" target="newtab"> <img
+				src="images/mc.jpg" width=100% height=100% id="onimage"
+				alt="Manchester City">
 			</a>
 		</div>
-		<div class="img-thumbnail" style="width: 320px; height: 320px;">
-			<a href="html/ManchesterCity.html" target="newtab"> <img
-				src="images/mc.jpg" style="width: 310px; height: 310px;"
-				id="onimage">
+
+		<div class="img-thumbnail" style="width: 320px; height: 320px;"
+			onmouseover="bigImage(this)" onmouseout="smallImage(this)">
+			<img src="images/mu.jpg" width=100% height=100% id="onimage"
+				alt="Manchester United">
+
+		</div>
+
+		<div class="img-thumbnail" style="width: 320px; height: 320px;"
+			onmouseover="bigImage(this)" onmouseout="smallImage(this)">
+			<a href="https://www.realmadrid.com/en" target="newtab"> <img
+				src="images/rmd.jpg" width=100% height=100% id="onimage"
+				alt="Real Madrid">
 			</a>
 		</div>
-		<div class="img-thumbnail" style="width: 320px; height: 320px;">
-			<a href="html/ManchesterUnited.html" target="newtab"> <img
-				src="images/mu.png" style="width: 310px; height: 310px;"
-				id="onimage">
-			</a>
-		</div>
-		<div class="img-thumbnail" style="width: 320px; height: 320px;">
-			<a href="html/RealMadrid.html" target="newtab"> <img
-				src="images/rmd.jpg" style="width: 310px; height: 310px;"
-				id="onimage">
-			</a>
-		</div>
-		<div class="img-thumbnail" style="width: 320px; height: 320px;">
-			<a href="html/Barcelona.html" target="newtab"> <img
-				src="images/barca.png" style="width: 310px; height: 310px"
-				id="onimage">
-			</a>
-		</div>
-		<div class="img-thumbnail" style="width: 320px; height: 320px;">
-			<a href="html/Barcelona.html" target="newtab"> <img
-				src="images/barca.png" style="width: 310px; height: 310px"
-				id="onimage">
-			</a>
-		</div>
+
 	</div>
+
+	<!-- 	<div id="imageModal" class="modal">
+		<span class="close" onclick="closeModal()">x</span> <img
+			class="modal-content" id="img01">
+		<div id="caption"></div>
+	</div>
+	 -->
+
 	<button type="button" class="btn btn-default btn-circle"
-		id="scrollButton" >
+		id="scrollButton">
 		<i class="up" id="totop"></i>
 	</button>
+
 	<script>
-			$("button").click(function(){
-				$("html,body").animate({scrollTop: 0}, "slow");
-				return true;
-			});
+		$("button").click(function() {
+			$("html,body").animate({
+				scrollTop : 0
+			}, "slow");
+			return true;
+		});
 	</script>
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -191,6 +203,6 @@
 		<p style="padding-top: 30px">Designed by Nguyen Huu Uy. Collect
 			from many different online documents</p>
 	</footer>
-	
+
 </body>
 </html>
